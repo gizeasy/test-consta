@@ -295,6 +295,15 @@ module.exports = function (webpackEnv) {
         .map((ext) => `.${ext}`)
         .filter((ext) => useTypeScript || !ext.includes('ts')),
       alias: {
+        '@/components': path.resolve(__dirname, '../src/components/'),
+        '@/containers': path.resolve(__dirname, '../src/containers/'),
+        '@/modules': path.resolve(__dirname, '../src/modules'),
+        '@/pages': path.resolve(__dirname, '../src/pages/'),
+        '@/svg': path.resolve(__dirname, '../src/svg/'),
+        '@/icons': path.resolve(__dirname, '../src/icons/'),
+        '@/utils': path.resolve(__dirname, '../src/utils/'),
+        '@/images': path.resolve(__dirname, '../src/images/'),
+        '@/types': path.resolve(__dirname, '../src/types/'),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',

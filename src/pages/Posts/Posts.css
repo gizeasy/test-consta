@@ -1,0 +1,30 @@
+.pa--Posts {
+  &-Table {
+    overflow: hidden;
+    width: 100%;
+  }
+  &-Col {
+    padding: var(--space-l);
+    &_number {
+      &_1 {
+        padding: 0 0 0 var(--space-l);
+        width: 48px;
+      }
+    }
+  }
+  &-Item {
+    &:hover {
+      background-color: var(--color-bg-ghost);
+    }
+  }
+  &-CollapseButton {
+    &_active {
+      transform: rotate(90deg);
+      transition: transform 0.2s;
+    }
+  }
+  &-Description {
+    width: 100%;
+    padding: var(--space-l);
+  }
+}

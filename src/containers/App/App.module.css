@@ -1,0 +1,13 @@
+@value path: '../../..';
+
+:import('path/src/containers/Block/Block.module.css') {
+  Block: Block;
+}
+
+/* @value Mix: Block; */
+/* переопределение стилей */
+.Block.App {
+  /* composes: Mix; */
+  width: auto;
+  --path: path;
+}
